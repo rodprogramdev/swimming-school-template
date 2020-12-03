@@ -1,0 +1,427 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Work Sans', sans-serif;
+}
+/**************************************HEADER SECTION*********************************/
+
+#header{
+    background-image:linear-gradient(to right bottom, rgba(14, 4, 4, 0.171),
+    rgba(14, 4, 2, 0.377)), 
+    url(../images/pexels-porapak-apichodilok.jpg);
+    background-size: cover;
+    height: 100vh;
+  
+
+}
+
+@media only screen and (max-width: 600px) {
+    #header{
+        background-image:linear-gradient(to right bottom, rgba(14, 4, 4, 0.171),
+    rgba(14, 4, 2, 0.377)), 
+    url(../images/pexels-porapak-apichodilok.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #header{
+        background-position: 50% 75%;
+    }
+}
+
+.navbar{
+    margin:0;
+    padding:2%;
+    background-color: #0078beab ;
+    color:white;
+    
+}
+
+
+.heading{
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+text-align:center;
+color:white;
+width: 80%;
+}
+
+
+
+.heading__primary{
+    /* background-color:red; */
+    font-size: 5rem;
+    letter-spacing: 5px;
+    width: 50%;
+    display: inline-block;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .heading__primary{
+        font-size: 3rem;
+        letter-spacing: none;
+        width: 100%;
+        text-align: left;
+        
+
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .heading__primary{
+        width: 80%;
+    }
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80%{
+        transform:translateX(2rem);
+    }
+
+    100%{
+        opacity:1;
+        transform:translate(0);
+    }
+
+    
+}
+
+.heading__secondary{
+    /* background-color:red; */
+    display: inline-block;
+    font-size: 1.5rem;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .heading__secondary{
+        font-size:1rem;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80%{
+        transform:translateX(-2rem);
+    }
+
+    100%{
+        opacity:1;
+        transform:translate(0);
+    }
+}
+
+
+
+/**************************************ABOUT SECTION*********************************/
+.about{
+    height: 100vh;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .about{ 
+        height: 110vh;
+        padding: 5%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .about{
+        height: 100vh;
+        margin-bottom: 15%;
+    }
+}
+
+
+
+
+
+.about__paragraph{
+    padding:10% 5%;
+    
+}
+
+.row{
+    position: relative;
+}
+
+.smilingKid{
+    height: 40rem;
+    width: 40rem;
+    padding-top: 5% ;
+    
+}
+
+img{
+    
+    height: 70%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    img{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+   .smilingKid{
+       display: inline-block;
+       height: 20rem;
+       width: 20rem;
+       position:absolute;
+       border-radius: 2%;
+       top: 100%;
+       left: 8%;
+       transform: translateX(-50%,-50%);
+
+   }
+}
+/**************************************GALLERY SECTION*********************************/
+/* Picture Sources
+https://www.pexels.com/photo/active-blue-blur-child-346776/
+https://www.pexels.com/photo/sunglasses-girl-swimming-pool-swimming-61129/
+https://www.pexels.com/photo/athlete-exercise-fitness-leisure-261185/
+https://www.pexels.com/photo/woman-and-three-children-playing-water-1231365/ 
+https://www.pexels.com/photo/person-swimming-on-body-of-water-863988/
+https://www.pexels.com/photo/boy-in-a-pool-2326887/*/
+#gallery{
+    
+    background-color:#0078beab;
+    background-image:linear-gradient(to right bottom, rgba(235, 212, 8, 0.295),
+    rgba(77, 177, 216, 0.301)), url(../images/pexels-pixabay-261185.jpg);
+    height: 120vh;
+    text-align:center;
+    color:white;
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    #gallery{
+        height: 50vh;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    #gallery{
+        height: 50vh;
+        
+    
+    }
+
+   
+}
+
+
+.gallery__heading{
+    padding-top:4%;
+    text-shadow: -2px 2px 2px black;/*rgb(228, 231, 9);*/
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery__heading{
+        font-size: 2rem;
+    }
+}
+
+
+.carousel-item{
+    padding:2% 15% 5% 15%;  
+    
+}
+
+@media only screen and (max-width: 600px) {
+.carousel-item{
+    padding: 5% 5% 5% 5%;
+}
+}
+
+
+.carousel-caption{
+    padding-bottom: -10%;
+}
+
+#carouselExampleCaptions{
+    padding-top: 0;
+}
+
+.gallery__image{
+    height:100%;
+    width:80%;
+    border-radius: 5%;
+    box-shadow: 0 0 5px white;
+    /* border: 5px solid yellow; */
+}
+
+.gallery__image--2{
+    height: 97%;
+}
+
+/**************************************TESTIMONIALS SECTION*********************************/
+#pricing{
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+     width: 90%;
+    margin: 0 auto; 
+}
+
+@media only screen and (max-width: 768px) {
+    #pricing{height: 110vh} 
+}
+@media only screen and (max-width: 600px) {
+    #pricing{
+        height: 100vh;
+    }
+
+}
+
+
+
+
+
+/* 
+@media only screen and (max-width: 768px) {
+    #pricing{
+        height: 250;
+    }
+} */
+
+
+.pricing__heading{
+    padding-top:4%;
+    padding-bottom: 5%;
+}
+
+/**************************************MAP SECTION*********************************/
+.map{
+height: 100vh;
+position:relative;
+}
+
+
+
+#map{
+    height: 500px;
+    width: 50%;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+/**************************************FOOTER SECTION*********************************/
+footer{
+    height: 35vh;
+    background-color: #0078beab ;
+    color:white;
+}
+
+@media only screen and (max-width: 768px) {
+    footer{
+       
+        margin-top: 5%;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    footer{
+        height: 50vh;
+        margin-top: 100%;
+    }
+
+  
+}
+
+
+
+
+.footer__list{
+    list-style-type:none;
+    padding-top: 6%;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    h4{
+        font-size: 1rem;
+    }
+    .footer__list{
+        font-size: 12px;
+    }
+}
+
+
+
+
+.footer__item{
+    translate:all ease-in 5s;
+}
+
+.footer__item:hover{
+    color: lightblue;
+
+    text-decoration: none;
+    transform: translateX(.2rem);
+}
+.footer__link{
+    text-decoration: none;
+    cursor: pointer;    
+    color:white;
+}
+
+.footer__link:hover{
+    text-decoration: none;
+    color: rgb(243, 239, 22);
+}
+
+.footer__copyright{
+    text-align:center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .footer__copyright{
+        font-size: 12px;
+    }
+}
